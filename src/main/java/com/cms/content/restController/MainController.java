@@ -1,0 +1,13 @@
+package com.cms.content.restController;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MainController {
+
+	 @GetMapping("/private")
+	    public String privateRoute() {
+	        return "Private Route";
+	    }
+}
